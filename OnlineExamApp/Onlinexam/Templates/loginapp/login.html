@@ -1,0 +1,9 @@
+<span style="font-size: large; color: red;">{{message}}</span>
+<br>
+<form>
+    <input type="text" name="username" placeholder="Enter username"> <br> <br>
+    <input type="password" name="password" placeholder="Enter password"> <br> <br>
+    <input type="submit" value="login" formmethod="post" formaction="/loginapp/login/">
+    <input type="submit" value="Register" formmethod="get" formaction="/loginapp/register/">
+    {% csrf_token %}
+</form>
